@@ -13,6 +13,14 @@
   )
 
   (page A3)
+  (title_block 
+    (title "Borne Arcade FOL ATMega")
+    (rev 0.1)
+    (company "Fabrique d'Objets Libres - Techno-Innov")
+    (comment 1 "Licence : CC-By-SA")
+    (comment 2 "Author : Nathael Pajani - nathael.pajani@techno-innov.fr")
+  )
+
   (layers
     (15 F.Cu signal)
     (0 B.Cu signal)

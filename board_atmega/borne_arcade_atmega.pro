@@ -1,35 +1,11 @@
-update=lun. 07 juil. 2014 21:21:46 CEST
+update=mar. 08 juil. 2014 13:33:32 CEST
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[pcbnew]
-version=1
-PadDrlX=276
-PadDimH=472
-PadDimV=472
-BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
-VEgarde=100
-DrawLar=150
-EdgeLar=150
-TxtLar=120
-MSegLar=87
-LastNetListRead=
-[pcbnew/libraries]
-LibDir=
-LibName1=../Lib/serigraphie
-LibName2=../Lib/fol
-LibName3=pin_array
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../Lib
@@ -43,3 +19,31 @@ LibName1=power
 LibName2=fol
 LibName3=serigraphie
 LibName4=device
+LibName5=serigraphie_fol
+[pcbnew]
+version=1
+LastNetListRead=
+UseCmpFile=1
+PadDrill="    0,000000"
+PadDrillOvalY="    0,000000"
+PadSizeH="    0,350000"
+PadSizeV="    1,000000"
+PcbTextSizeV="    1,500000"
+PcbTextSizeH="    1,500000"
+PcbTextThickness="    0,300000"
+ModuleTextSizeV="    1,500000"
+ModuleTextSizeH="    1,500000"
+ModuleTextSizeThickness="    0,150000"
+SolderMaskClearance="    0,200000"
+SolderMaskMinWidth="    0,000000"
+DrawSegmentWidth="    0,200000"
+BoardOutlineThickness="    0,150000"
+ModuleOutlineThickness="    0,150000"
+[pcbnew/libraries]
+LibDir=
+LibName1=../Lib/serigraphie
+LibName2=../Lib/fol
+LibName3=pin_array
+LibName4=../Lib/serigraphie_fol
+[general]
+version=1
