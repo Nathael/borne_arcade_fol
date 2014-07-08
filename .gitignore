@@ -1,23 +1,47 @@
-# Object files
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+
+# C Object files
 *.o
-*.ko
-*.obj
-*.elf
+*.d
+*.bin
+*.map
+*/objs/*
+tags
 
-# Libraries
-*.lib
-*.a
+# Kikad output files
+*.bck
+*.dcm
+*.bak
+*.wrl
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.gtr
+*.gbr
+*.gbp
+*.gtp
+*.pho
+*.drl
+*-bak
+*.000
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Other files
+*.zip
+*.svg
+*.ps
+*.emp
+*.png
+*.bz2
+*.pdf
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
