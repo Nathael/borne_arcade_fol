@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-dec-23)-stable date = mar. 08 juil. 2014 13:29:58 CEST
+Cmp-Mod V01 Created by CvPcb (2013-dec-23)-stable date = mar. 08 juil. 2014 14:59:19 CEST
 
 BeginCmp
 TimeStamp = /53BB19A5;
@@ -78,24 +78,45 @@ IdModule  = LOGO_FOL;
 EndCmp
 
 BeginCmp
+TimeStamp = /53BBEB05;
+Reference = H1;
+ValeurCmp = HOLE_3MM;
+IdModule  = Hole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BBEB12;
+Reference = H2;
+ValeurCmp = HOLE_3MM;
+IdModule  = Hole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BBEB18;
+Reference = H3;
+ValeurCmp = HOLE_3MM;
+IdModule  = Hole_3mm;
+EndCmp
+
+BeginCmp
 TimeStamp = /53BAF2FD;
 Reference = P1;
 ValeurCmp = MUSB;
-IdModule  = ;
+IdModule  = USB_Mini;
 EndCmp
 
 BeginCmp
 TimeStamp = /53BB3FF3;
 Reference = P2;
 ValeurCmp = CONN_15;
-IdModule  = ;
+IdModule  = pin_array_15x1;
 EndCmp
 
 BeginCmp
 TimeStamp = /53BB499C;
 Reference = P3;
 ValeurCmp = CONN_15;
-IdModule  = ;
+IdModule  = pin_array_15x1;
 EndCmp
 
 BeginCmp
@@ -312,7 +333,7 @@ BeginCmp
 TimeStamp = /53BAF605;
 Reference = X1;
 ValeurCmp = QUARTZ_CMS_4;
-IdModule  = ABM10_Quartz;
+IdModule  = 7B_CMS4_Quartz;
 EndCmp
 
 EndListe
