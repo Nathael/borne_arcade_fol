@@ -1,7 +1,8 @@
-PCBNEW-LibModule-V1  mar. 08 juil. 2014 12:02:22 CEST
+PCBNEW-LibModule-V1  mar. 08 juil. 2014 14:16:19 CEST
 # encoding utf-8
 Units mm
 $INDEX
+7B_CMS4_Quartz
 868MHz_Antena_8x2
 868MHz_Antena_8x2_no_pcb_ant
 A7_Quartz
@@ -125,6 +126,7 @@ UFL_Hirose
 USB_A
 USB_A_Male_CMS
 USB_DOUBLE_A
+USB_Mini
 USB_micro_AB
 USB_micro_AB_Picots
 VCNL4000
@@ -152,6 +154,47 @@ pin_array_7x2
 pin_array_8x1
 uSD_Molex_47219-2001
 $EndINDEX
+$MODULE 7B_CMS4_Quartz
+Po 0 0 0 15 53BBDB3D 00000000 ~~
+Li 7B_CMS4_Quartz
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2.1844 0.7 0.6 0 0.11 N I 21 N "7B_CMS4_Quartz"
+T1 0.0254 2.2352 0.7 0.6 0 0.11 N V 21 N "VAL**"
+DS -2.5 -1.6 2.5 -1.6 0.20066 21
+DS 2.5 -1.6 2.5 1.6 0.20066 21
+DS 2.5 1.6 -2.5 1.6 0.20066 21
+DS -2.5 1.6 -2.5 -1.6 0.20066 21
+$PAD
+Sh "1" R 2 1.2 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.85 1.1
+$EndPAD
+$PAD
+Sh "2" R 2 1.2 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.85 1.1
+$EndPAD
+$PAD
+Sh "3" R 2 1.2 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.85 -1.1
+$EndPAD
+$PAD
+Sh "4" R 2 1.2 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.85 -1.1
+$EndPAD
+$EndMODULE 7B_CMS4_Quartz
 $MODULE 868MHz_Antena_8x2
 Po 0 0 0 15 5097A01F 00000000 ~~
 Li 868MHz_Antena_8x2
@@ -13820,6 +13863,96 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE USB_DOUBLE_A
+$MODULE USB_Mini
+Po 0 0 0 15 53BBE01D 00000000 ~~
+Li USB_Mini
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -1.15 0.7 0.6 0 0.11 N V 21 N "USB_Mini"
+T1 0 0.9 0.7 0.6 0 0.11 N V 21 N "VAL**"
+DS 3.85 -6.25 -3.85 -6.25 0.15 21
+DS -3.85 -6.25 -3.85 2.95 0.15 21
+DS 3.85 2.95 3.85 -6.25 0.15 21
+DS -3.85 2.95 3.85 2.95 0.15 21
+$PAD
+Sh "5" R 2 2.5 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.45 -5.5
+$EndPAD
+$PAD
+Sh "5" R 2 2.5 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.45 -5.5
+$EndPAD
+$PAD
+Sh "5" R 2 2.5 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.45 0
+$EndPAD
+$PAD
+Sh "5" R 2 2.5 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.45 0
+$EndPAD
+$PAD
+Sh "" C 0.9 0.9 0 0 1800
+Dr 0.9 0 0
+At HOLE N 00E0FFFF
+Ne 0 ""
+Po 2.2 -3
+$EndPAD
+$PAD
+Sh "" C 0.9 0.9 0 0 1800
+Dr 0.9 0 0
+At HOLE N 00E0FFFF
+Ne 0 ""
+Po -2.2 -3
+$EndPAD
+$PAD
+Sh "3" R 0.5 2.3 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -5.6
+$EndPAD
+$PAD
+Sh "2" R 0.5 2.3 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.8 -5.6
+$EndPAD
+$PAD
+Sh "1" R 0.5 2.3 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.6 -5.6
+$EndPAD
+$PAD
+Sh "4" R 0.5 2.3 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.8 -5.6
+$EndPAD
+$PAD
+Sh "5" R 0.5 2.3 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.6 -5.6
+$EndPAD
+$EndMODULE USB_Mini
 $MODULE USB_micro_AB
 Po 0 0 0 15 50083115 00000000 ~~
 Li USB_micro_AB
