@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-dec-23)-stable date = mar. 08 juil. 2014 14:59:19 CEST
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = jeu. 17 juil. 2014 17:31:20 CEST
 
 BeginCmp
 TimeStamp = /53BB19A5;
@@ -75,6 +75,13 @@ TimeStamp = /53BBD712;
 Reference = G2;
 ValeurCmp = LOGO_FOL;
 IdModule  = LOGO_FOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /53C7ED64;
+Reference = G3;
+ValeurCmp = LOGO_OSHW;
+IdModule  = OSHW_logo_silkscreen-front_6mm;
 EndCmp
 
 BeginCmp

@@ -1,25 +1,11 @@
-update=mar. 08 juil. 2014 13:33:32 CEST
+update=jeu. 17 juil. 2014 17:07:34 CEST
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[eeschema]
-version=1
-LibDir=../Lib
-NetFmtName=
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
-[eeschema/libraries]
-LibName1=power
-LibName2=fol
-LibName3=serigraphie
-LibName4=device
-LibName5=serigraphie_fol
 [pcbnew]
 version=1
 LastNetListRead=
@@ -47,3 +33,18 @@ LibName3=pin_array
 LibName4=../Lib/serigraphie_fol
 [general]
 version=1
+[eeschema]
+version=1
+LibDir=../Lib
+NetFmtName=
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
+[eeschema/libraries]
+LibName1=power
+LibName2=fol
+LibName3=serigraphie
+LibName4=device
+LibName5=serigraphie_fol
+LibName6=oshw
