@@ -1,4 +1,4 @@
-update=jeu. 17 juil. 2014 17:07:34 CEST
+update=dim. 21 sept. 2014 12:19:45 CEST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -48,3 +48,4 @@ LibName3=serigraphie
 LibName4=device
 LibName5=serigraphie_fol
 LibName6=oshw
+LibName7=conn

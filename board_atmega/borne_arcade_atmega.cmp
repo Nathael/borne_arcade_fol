@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = jeu. 17 juil. 2014 17:31:20 CEST
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = mer. 24 sept. 2014 02:48:46 CEST
 
 BeginCmp
 TimeStamp = /53BB19A5;
@@ -57,6 +57,13 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /541EB041;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /53BAF420;
 Reference = FB1;
 ValeurCmp = FILTER;
@@ -109,7 +116,7 @@ BeginCmp
 TimeStamp = /53BAF2FD;
 Reference = P1;
 ValeurCmp = MUSB;
-IdModule  = USB_Mini;
+IdModule  = USB_micro_AB_Picots;
 EndCmp
 
 BeginCmp
@@ -124,6 +131,13 @@ TimeStamp = /53BB499C;
 Reference = P3;
 ValeurCmp = CONN_15;
 IdModule  = pin_array_15x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /541EB4D4;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = pin_1x1;
 EndCmp
 
 BeginCmp
@@ -327,6 +341,27 @@ TimeStamp = /53BB1BBF;
 Reference = R29;
 ValeurCmp = 100K;
 IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /541EA9EB;
+Reference = R30;
+ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /541EA9FD;
+Reference = SW1;
+ValeurCmp = Reset;
+IdModule  = SWITCH_CMS;
+EndCmp
+
+BeginCmp
+TimeStamp = /541EA9E5;
+Reference = SW2;
+ValeurCmp = BP2;
+IdModule  = SWITCH_CMS;
 EndCmp
 
 BeginCmp

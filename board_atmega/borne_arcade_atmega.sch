@@ -5,6 +5,7 @@ LIBS:serigraphie
 LIBS:device
 LIBS:serigraphie_fol
 LIBS:oshw
+LIBS:conn
 LIBS:borne_arcade_atmega-cache
 EELAYER 27 0
 EELAYER END
@@ -12,8 +13,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Borne Arcade FOL ATMega"
-Date "17 jul 2014"
-Rev "0.1"
+Date "21 sep 2014"
+Rev "0.2"
 Comp "Fabrique d'Objets Libres - Techno-Innov"
 Comment1 "Licence : CC-By-SA"
 Comment2 "Author : Nathael Pajani - nathael.pajani@techno-innov.fr"
@@ -221,12 +222,12 @@ $EndComp
 $Comp
 L R R3
 U 1 1 53BB175F
-P 2400 2900
-F 0 "R3" V 2325 2800 40  0000 C CNN
-F 1 "10K" V 2407 2901 40  0000 C CNN
-F 2 "0603" V 2325 2975 40  0000 C CNN
-F 3 "~" H 2400 2900 30  0000 C CNN
-	1    2400 2900
+P 2500 2900
+F 0 "R3" V 2425 2800 40  0000 C CNN
+F 1 "10K" V 2507 2901 40  0000 C CNN
+F 2 "0603" V 2425 2975 40  0000 C CNN
+F 3 "~" H 2500 2900 30  0000 C CNN
+	1    2500 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -601,8 +602,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 3750 1050 3750
 Wire Wire Line
-	1650 3400 3000 3400
-Wire Wire Line
 	1650 3400 1650 4150
 Wire Wire Line
 	1650 4550 1650 4800
@@ -671,18 +670,16 @@ Wire Wire Line
 	3000 4300 2700 4300
 Connection ~ 2700 4400
 Wire Wire Line
-	3000 3300 1400 3300
-Wire Wire Line
 	1400 3300 1400 4100
 Wire Wire Line
 	1400 4500 1400 4650
 Wire Wire Line
-	2400 2500 2400 2650
-Connection ~ 2400 2500
+	2500 2500 2500 2650
+Connection ~ 2500 2500
 Wire Wire Line
-	2400 3150 2400 3600
+	2500 3150 2500 3600
 Wire Wire Line
-	2400 3600 3000 3600
+	2450 3600 3000 3600
 Wire Wire Line
 	1350 2500 1350 2550
 Connection ~ 1350 2500
@@ -1025,4 +1022,152 @@ F 3 "" H 6650 6750 60  0000 C CNN
 	1    6650 6750
 	1    0    0    -1  
 $EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 541EA9E5
+P 5250 5650
+F 0 "SW2" H 5500 5700 40  0000 C CNN
+F 1 "BP2" H 5250 5650 40  0000 C CNN
+F 2 "" H 5250 5650 60  0001 C CNN
+F 3 "" H 5250 5650 60  0001 C CNN
+	1    5250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 541EA9EB
+P 1500 1850
+F 0 "R30" V 1580 1850 40  0000 C CNN
+F 1 "1k" V 1500 1850 40  0000 C CNN
+F 2 "0603" V 1580 1710 40  0000 C CNN
+F 3 "" H 1500 1850 60  0001 C CNN
+	1    1500 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DGND #PWR010
+U 1 1 541EA9F1
+P 1800 3700
+F 0 "#PWR010" H 1800 3700 40  0001 C CNN
+F 1 "DGND" H 1800 3630 40  0000 C CNN
+F 2 "" H 1800 3700 60  0001 C CNN
+F 3 "" H 1800 3700 60  0001 C CNN
+	1    1800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 541EA9FD
+P 2150 3600
+F 0 "SW1" H 2400 3650 40  0000 C CNN
+F 1 "Reset" H 2150 3600 40  0000 C CNN
+F 2 "" H 2150 3600 60  0001 C CNN
+F 3 "" H 2150 3600 60  0001 C CNN
+	1    2150 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 3600
+Wire Wire Line
+	1850 3600 1800 3600
+Wire Wire Line
+	1800 3600 1800 3700
+Wire Wire Line
+	4700 4650 4700 5650
+Wire Wire Line
+	4700 5650 4950 5650
+Connection ~ 4700 4650
+$Comp
+L DGND #PWR011
+U 1 1 541EAE38
+P 5650 5800
+F 0 "#PWR011" H 5650 5800 40  0001 C CNN
+F 1 "DGND" H 5650 5700 40  0000 C CNN
+F 2 "" H 5650 5800 60  0000 C CNN
+F 3 "" H 5650 5800 60  0000 C CNN
+	1    5650 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5650 5650 5650
+Wire Wire Line
+	5650 5650 5650 5800
+$Comp
+L LED D1
+U 1 1 541EB041
+P 2050 1850
+F 0 "D1" H 2050 1950 50  0000 C CNN
+F 1 "LED" H 2050 1750 50  0000 C CNN
+F 2 "~" H 2050 1850 60  0000 C CNN
+F 3 "~" H 2050 1850 60  0000 C CNN
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR012
+U 1 1 541EB04E
+P 2350 1950
+F 0 "#PWR012" H 2350 1950 40  0001 C CNN
+F 1 "DGND" H 2350 1850 40  0000 C CNN
+F 2 "" H 2350 1950 60  0000 C CNN
+F 3 "" H 2350 1950 60  0000 C CNN
+	1    2350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1850 1250 1850
+Connection ~ 1150 1850
+Wire Wire Line
+	1750 1850 1850 1850
+Wire Wire Line
+	2250 1850 2350 1850
+Wire Wire Line
+	2350 1850 2350 1950
+Wire Notes Line
+	1000 1700 2550 1700
+Wire Notes Line
+	2550 1700 2550 2200
+Wire Notes Line
+	2550 2200 1000 2200
+Wire Notes Line
+	1000 2200 1000 1700
+Text Notes 1300 2100 0    60   ~ 12
+Power ok led
+Text Notes 4700 5850 0    60   ~ 12
+Bootloader select
+Wire Notes Line
+	4600 5500 5850 5500
+Wire Notes Line
+	5850 5500 5850 5950
+Wire Notes Line
+	5850 5950 4600 5950
+Wire Notes Line
+	4600 5950 4600 5500
+$Comp
+L CONN_1 P4
+U 1 1 541EB4D4
+P 2700 3500
+F 0 "P4" H 2780 3500 40  0000 L CNN
+F 1 "CONN_1" H 2700 3555 30  0001 C CNN
+F 2 "" H 2700 3500 60  0000 C CNN
+F 3 "" H 2700 3500 60  0000 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3500 2500 3500
+Connection ~ 2500 3500
+Wire Notes Line
+	1700 3450 2950 3450
+Wire Notes Line
+	2950 3450 2950 3750
+Wire Notes Line
+	2950 3750 1700 3750
+Wire Notes Line
+	1700 3750 1700 3450
+Text Notes 2250 3750 0    60   ~ 12
+Reset
+Wire Wire Line
+	1650 3400 3000 3400
+Wire Wire Line
+	1400 3300 3000 3300
 $EndSCHEMATC
